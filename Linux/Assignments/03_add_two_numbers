@@ -1,0 +1,18 @@
+<<comments
+Date:12/10/2020
+Name:Sahana S S
+Description:write a script for additon of two number for real numbers 
+input:2
+output:
+Enter the number to addition
+10.32 20.45
+Answer is 30.77
+comments
+
+#!/bash/bin
+echo "Enter  the number to addition"
+read num1 num2	 		#To read the value of num1 and num2
+sum=`echo $num1 + $num2 | bc`	#expr does work for floating point arithmentic so bc command and piping is done
+echo "Answer is $sum" 		#To print the answer
+
+
